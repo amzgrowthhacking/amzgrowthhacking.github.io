@@ -7,20 +7,57 @@
 
     <link rel="icon" href="favicon.ico">
 
-    <title>Static Top Navbar Example for Bootstrap</title>
+    <title>OHS - 专业刷单平台</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
       .navbar-static-top {
-        margin-bottom: 19px;
+        margin-bottom: 2px;
       }
 
+      .banner {
+        background-image: url('img/banner.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 400px;
+        color: #fff;
+      }
+      .banner h1 {
+        margin: 0 0 0 120px;
+        padding-top: 100px;
+      }
+      .banner h4 {
+        margin-left: 120px;
+      }
+
+      #company-profile {
+        background-image: url('img/circle.png');
+        background-repeat: no-repeat;
+        background-position-x: 114px;
+        background-position-y: 40px;
+      }
+      #technology p, #international p {
+        padding: 20px 120px 0 10px;
+      }
+      #technology img, #international img {
+        width: 50px;
+        padding: 5px 10px;
+      }
+      #technology hr, #international hr {
+        border-top: 2px solid #e95420;
+        margin: 0px 120px 0 10px;
+      }
+
+      .footer {
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        background-color: #f5f5f5;
+    }
     </style>
   </head>
 
   <body>
-
-    <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -30,49 +67,69 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">OHS</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
-            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+            <li><a href="#company-profile">企业简介</a></li>
+            <li><a href="#technology">技术优势</a></li>
+            <li><a href="#international">海外资源</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 
+    <div class="banner">
+        <h1>OHS - 专业刷单平台</h1><br>
+        <h4>
+          我们的存在，是为您做的更好，<br><br>
+          专业的服务，让您轻松亚马逊！
+        </h4>
+    </div>
 
-    <div class="container">
-
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-        </p>
+    <div class="container" style="height: 400px;">
+      <div class="row">
+        <div id="company-profile" class="col-md-4">
+          <h2 class="text-center">销量</h2>
+          <br><br><br>
+          <h2 class="pull-left" style="padding-left: 20px;">排名</h2>
+          <h2 class="pull-right" style="padding-right: 20px;">流量</h2>
+        </div>
+        <div id="technology" class="col-md-4">
+          <h2>
+            <img src="img/technology.png" class="img-responsive pull-left">
+            技术优势<br>
+            <small class="text-primary">Technology</small>
+          </h2>
+          <p>
+            专业技术团队研究A9算法，跟踪核心权重指标数据，提升产品竞争力。
+            <hr>
+          </p>
+        </div>
+        <div id="international" class="col-md-4">
+          <h2>
+            <img src="img/international.png" class="img-responsive pull-left">
+            海外资源<br>
+            <small class="text-primary">International</small>
+          </h2>
+          <p>
+            在欧美日等海外主要国家和地区，均有丰富当地资源和技术人员。
+            <hr>
+          </p>
+        </div>
       </div>
-
-    </div> <!-- /container -->
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <ul class="nav nav-justified" style="margin-top: 12px;">
+          <li><a href="http://amazon.com">亚马逊Amazon</a></li>
+          <li><a href="http://www.google.com">谷歌Google</a></li>
+          <li><a href="http://www.baidu.com">百度Baidu</a></li>
+          <li><a href="http://www.1688.com">1688</a></li>
+          <li><a href="https://translate.google.com">谷歌翻译</a></li>
+        </ul>
+      </div>
+    </footer>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
