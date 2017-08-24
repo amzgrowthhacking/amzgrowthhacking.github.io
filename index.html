@@ -23,18 +23,18 @@
         color: #fff;
       }
       .banner h1 {
-        margin: 0 0 0 120px;
+        margin-top: 0;
+        margin-left: 5%;
         padding-top: 100px;
       }
       .banner h4 {
-        margin-left: 120px;
+        margin-left: 5%;
       }
 
       #company-profile {
         background-image: url('img/circle.png');
         background-repeat: no-repeat;
-        background-position-x: 114px;
-        background-position-y: 40px;
+        background-position: center 40px;
       }
       #technology p, #international p {
         padding: 20px 120px 0 10px;
@@ -84,15 +84,16 @@
         </h4>
     </div>
 
-    <div class="container" style="height: 400px;">
+    <div class="container" style="min-height: 400px;">
       <div class="row">
-        <div id="company-profile" class="col-md-4">
+        <div id="company-profile" class="col-md-4 col-sm-12">
           <h2 class="text-center">销量</h2>
-          <br><br><br>
+          <div style="height: 55px;"></div>
           <h2 class="pull-left" style="padding-left: 20px;">排名</h2>
           <h2 class="pull-right" style="padding-right: 20px;">流量</h2>
+          <div class="clearfix"></div>
         </div>
-        <div id="technology" class="col-md-4">
+        <div id="technology" class="col-md-4 col-sm-12">
           <h2>
             <img src="img/technology.png" class="img-responsive pull-left">
             技术优势<br>
@@ -103,7 +104,7 @@
             <hr>
           </p>
         </div>
-        <div id="international" class="col-md-4">
+        <div id="international" class="col-md-4 col-sm-12">
           <h2>
             <img src="img/international.png" class="img-responsive pull-left">
             海外资源<br>
@@ -119,11 +120,11 @@
     <footer class="footer">
       <div class="container">
         <ul class="nav nav-justified" style="margin-top: 12px;">
-          <li><a href="http://amazon.com">亚马逊Amazon</a></li>
-          <li><a href="http://www.google.com">谷歌Google</a></li>
-          <li><a href="http://www.baidu.com">百度Baidu</a></li>
-          <li><a href="http://www.1688.com">1688</a></li>
-          <li><a href="https://translate.google.com">谷歌翻译</a></li>
+          <li><a href="http://amazon.com" target="_blank">亚马逊Amazon</a></li>
+          <li><a href="http://www.google.com" target="_blank">谷歌Google</a></li>
+          <li><a href="http://www.baidu.com" target="_blank">百度Baidu</a></li>
+          <li><a href="http://www.1688.com" target="_blank">1688</a></li>
+          <li><a href="https://translate.google.com" target="_blank">谷歌翻译</a></li>
         </ul>
       </div>
     </footer>
