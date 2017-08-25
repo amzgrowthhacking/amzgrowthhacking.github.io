@@ -1,0 +1,8 @@
+pipelines:
+  branches:
+    master:
+      - step:
+          script: 
+            - echo "master branch updated!"
+            - git
+            - git remote -v
