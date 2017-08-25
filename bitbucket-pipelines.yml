@@ -4,5 +4,4 @@ pipelines:
       - step:
           script: 
             - echo "master branch updated!"
-            - git
             - git remote -v
