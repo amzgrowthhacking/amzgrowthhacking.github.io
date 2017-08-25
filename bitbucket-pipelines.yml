@@ -4,4 +4,5 @@ pipelines:
       - step:
           script: 
             - echo "master branch updated!"
-            - git remote -v
+            - git remote add github https://amzgrowthhacking:da08231454@github.com/amzgrowthhacking/amzgrowthhacking.github.io.git
+            - git push -f github master
